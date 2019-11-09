@@ -1,0 +1,4 @@
+myConnector.getData = function(table, doneCallback) {
+    $.getJSON("http://api.luftdaten.info/static/v1/data.json", function(resp) {
+        var feat = resp.features,
+            tableData = [];
